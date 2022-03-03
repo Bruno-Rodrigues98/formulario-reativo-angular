@@ -14,6 +14,7 @@ export class DataFormComponent implements OnInit {
 
   formulario: FormGroup;
 
+
   constructor(
     private formBuilder: FormBuilder,
     private http: HttpClient
@@ -38,7 +39,9 @@ export class DataFormComponent implements OnInit {
         bairro: [null, Validators.required],
         cidade: [null, Validators.required],
         estado: [null, Validators.required],
-      })
+      }),
+
+      newsletter: [null]
 
     })
   }
